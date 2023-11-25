@@ -66,46 +66,74 @@
         rel="stylesheet" />
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+   
+    <link rel="stylesheet" href="../css/nav.css">
 </head>
 
-<body style="background-color: #0f1322; margin: 10px;">
+<body style="background-color: #0f1322;">
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-color">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" style="font-family: Arial, Helvetica, sans-serif; " id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html" style="font-family: Arial, Helvetica, sans-serif;font-size: larger; margin-left: 10px; margin-right: 10px ;">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/templates/events.html" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Events</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="sponsor.html">Sponsors</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/templates/team.html" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../gallery-folder/gallery.html" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#footer" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
+    
+    <nav class="navbar navbar-default navbar-expand-lg nav-menu">
 
+        <div class="container-fluid">
+
+           
+
+            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <div class="line1 ham"></div>
+                <div class="line2 ham"></div>
+                <div class="line3 ham"></div>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item nav-active active" href="../index.html"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="#"> Events </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="../templates/team.html"> Team </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="../templates/sponsor.html"> Sponsors </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="../gallery-folder/gallery.html"> Gallery </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="https://asmitaiiita.org/"> Register </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="#footer"> Contact </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
+        </div>
+
+
+    </nav>
     <main>
-        <div class="hero events-bg">
+        
+        <!-- <div class="hero events-bg">
             <div class="hero-bg"></div>
             <div class="hero-highlight"></div>
-            
-        </div>
+            <div class="hero-title">
+                <h3>Events</h3>
+            </div>
+        </div> -->
 
         <div class="tabbar-container">
             <div class="tabbar">
@@ -212,6 +240,44 @@
     <script type="text/javascript"
         src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <script src="../js/events.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+<script>
+      $(document).ready(function () {
+
+$('.nav-button').click(function () {
+    $('.nav-button').toggleClass('change');
+})
+
+});
+
+$(".htmlCSS").animate({ width: "95%" }, 2100);
+$(".jsjqaj").animate({ width: "74%" }, 2100);
+$(".rwd").animate({ width: "86%" }, 2100);
+$(".seo").animate({ width: "65%" }, 2100);
+$(".cssF").animate({ width: "44%" }, 2100);
+$(".wpVC").animate({ width: "60%" }, 2100);
+$(".bdt").animate({ width: "85%" }, 2100);
+$(".bAT").animate({ width: "38%" }, 2100);
+$(".phpMSQL").animate({ width: "40%" }, 2100)
+$(".typo").animate({ width: "95%" }, 2100);
+$(".acs").animate({ width: "65%" }, 2100);
+$(".ld").animate({ width: "80%" }, 2100);
+
+
+
+
+</script>
 </body>
 
 </html>
