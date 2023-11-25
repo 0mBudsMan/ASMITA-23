@@ -204,7 +204,7 @@ section {
 .about__txt {
 	width: calc(50% - 35px);
 	height: auto;
-	
+	padding-bottom: 300px;
 }
 .about__img{
 	width: calc(50% - 35px);
@@ -218,7 +218,7 @@ section {
 .about__p {
 	line-height: 1.4;
 	font-size: 20px;
-	
+	color: #4b4b4b;
 }
 
 .about__img {

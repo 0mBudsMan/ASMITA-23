@@ -64,15 +64,18 @@
 
     <link rel="stylesheet" href="css/homepage-banner-style.css" />
 
-    <script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript"
-    src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
 
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+        rel="stylesheet" />
     <!-- Material Design Bootstrap -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.0/css/mdb.min.css" rel="stylesheet" />
+
     <!-- Font -->
 
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet" />
@@ -97,39 +100,130 @@
     <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css" rel="stylesheet" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body style="background-color: #0f1322;">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-color">
-        <!-- <a class="navbar-brand" href="#">Navbar</a> -->
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" style="font-family: Arial, Helvetica, sans-serif; " id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link active" href="../index.html" style="font-family: Arial, Helvetica, sans-serif;font-size: larger; margin-left: 10px; margin-right: 10px ;">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/templates/events.html" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Events</a>
-                </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="sponsor.html">Sponsors</a>
-                </li> -->
-                <li class="nav-item">
-                    <a class="nav-link" href="/templates/team.html" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Team</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="../gallery-folder/gallery.html" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Gallery</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#footer" style="font-family: Arial, Helvetica, sans-serif; font-size: larger;margin-left: 10px; margin-right: 10px ;">Contact</a>
-                </li>
-            </ul>
+
+    <nav class="navbar navbar-default navbar-expand-lg nav-menu">
+
+        <div class="container-fluid">
+
+           
+
+            <button class="navbar-toggler nav-button" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <div class="line1 ham"></div>
+                <div class="line2 ham"></div>
+                <div class="line3 ham"></div>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="myNavbar">
+
+                <ul class="navbar-nav ml-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item nav-active active" href="#"> Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="./templates/events.html"> Events </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="./templates/team.html"> Team </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="./templates/sponsor.html"> Sponsors </a>
+                    </li>
+
+
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="./gallery-folder/gallery.html"> Gallery </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="https://asmitaiiita.org/"> Register </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link m-2 menu-item" href="#footer"> Contact </a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+
         </div>
+
+
     </nav>
+
+    <!-- <nav class="navbar fixed-top navbar-expand-md navbar-dark bg-dark navbar-theme">
+        <a class="navbar-brand" href="#">BRAND</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse justify-content-md-center" id="main-menu">
+          <ul class="navbar-nav text-uppercase mt-4">
+            <li class="nav-item active">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#products">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav> -->
+
+    <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#" style="font-weight: 600">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./templates/events.html" style="font-weight: 600">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./templates/team.html" style="font-weight: 600">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./templates/sponsor.html" style="font-weight: 600">Sponsors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./gallery-folder/gallery.html" style="font-weight: 600">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://asmitaiiita.org/" style="font-weight: 600">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer" style="font-weight: 600">Contact</a>
+                    </li>
+
+
+                </ul>
+
+            </div>
+        </div>
+    </nav> -->
 
     <!-- div .wrapp -->
     <div id="luxy" class="wrapp">
@@ -187,7 +281,7 @@
             </div>
         </header>
 
-        <main class="main" style="margin: 10px;">
+        <main class="main">
 
             <!-- div .about -->
             <section class="about" style="margin-bottom: 10px;">
@@ -209,7 +303,7 @@
             </section>
 
             <!-- div .benefits -->
-            <section class="about" style="margin-bottom: 40px;">
+            <section class="about" style="margin-bottom: 10px;">
                 <div class="about__wrapp row">
 
                     <div class="about__txt col-lg-7 col-md-12 col-sm-12">
@@ -230,12 +324,12 @@
             </section>
 
             <!-- div .work -->
-            <section class="about" style="margin-bottom: 10px; margin-top: 25px;">
+            <section class="about" style="margin-bottom: 10px;">
                 <div class="about__wrapp row">
-                    <div class=" col-lg-5 col-md-12 col-sm-12">
+                    <div class="about__img col-lg-5 col-md-12 col-sm-12">
                         <img src="assets/images/sponsor.png" alt="2">
                     </div>
-                    <div class=" col-lg-7 col-md-12 col-sm-12">
+                    <div class="about__txt col-lg-7 col-md-12 col-sm-12">
                         <h2 class="section-title"><span class="stroke">Sponsor Us</span>
                             <span class="section-title__square"></span>
                         </h2>
@@ -254,7 +348,7 @@
                 <footer class="footer" id="footer">
                     <!-- <div class="containerrr"> -->
                     <div class="row">
-                        <div class="col-lg-5 col-md-12 col-sm-12 row" style="padding-left: 20px; margin-bottom: 50px;">
+                        <div class="col-lg-5 col-md-12 col-sm-12 row" style="padding-left: 20px;">
                             <!-- <h4>Address</h4>
                             <ul>
                                 <li>
@@ -266,12 +360,12 @@
                                     >
                                 </li>
                             </ul> -->
-                            <img src="./assets/images/Logo.png" alt="Logo" class="col-lg-6"  />
-                            <img src="./assets/images/inter.png" alt="Logo" class="col-lg-6"  />
+                            <img src="./assets/images/Logo.png" alt="Logo" class="col-lg-6" />
+                            <img src="./assets/images/inter.png" alt="Logo" class="col-lg-6" />
                         </div>
-                        <div class="col-lg-3 col-sm-12 col-md-12" style="text-align: center; margin-bottom: 50px;" >
+                        <div class="col-lg-3 col-sm-6 col-md-6">
                             <h4 style="color: aliceblue;">Phone Numbers</h4>
-                            <ul style="color: aliceblue; text-align: center;">
+                            <ul style="color: aliceblue;">
                                 <li>
                                     <a href="">
                                         Overall Coordinator:
@@ -285,16 +379,16 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-lg-2 col-sm-12 col-md-12 " style=" color: aliceblue; text-align: center; margin-bottom: 50px;">
+                        <div class="col-lg-2 col-sm-6 col-md-6" style=" color: aliceblue;">
                             <h4 style="color: aliceblue;">Email</h4>
-                            
-                                <a href="mailto:asmita@iiita.ac.in" >asmita@iiita.ac.in</a>
-                            
+
+                            <a href="mailto:asmita@iiita.ac.in">asmita@iiita.ac.in</a>
+
                         </div>
-                        <div class="col-lg-2" style="text-align: center;" >
+                        <div class="col-lg-2">
                             <h4 style="color: aliceblue;">Follow us</h4>
-                            <div style=" align-items: center;">
-                                <a href="https://www.facebook.com/asmitaiiita" style="margin-right: 50px;" target="_blank"><i
+                            <div class="social-links" style="display: flex; gap: 20px;">
+                                <a href="https://www.facebook.com/asmitaiiita" target="_blank"><i
                                         class="fab fa-facebook-f"></i></a>
                                 <!-- <a href="#"><i class="fab fa-twitter"></i></a> -->
                                 <a href="https://www.instagram.com/asmita_iiita/" target="_blank"><i
@@ -306,7 +400,7 @@
                     <!-- </div> -->
                 </footer>
             </div>
-    </div>
+
     </main>
 
     <!-- div .footer -->
@@ -327,6 +421,20 @@
     </footer>
     </div>
     <!-- /div .wrapp END -->
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://rendro.github.io/easy-pie-chart/javascripts/jquery.easy-pie-chart.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
     <script>
         mapboxgl.accessToken =
             "pk.eyJ1IjoiZmFsY29uaXMiLCJhIjoiY2pwcmJsbGdtMDIwMTQzcW9iem95Y3JwMiJ9.ZMuieD007uiLhCAT-TfeIg";
@@ -386,6 +494,205 @@
                 )
                 .addTo(map);
         });
+
+
+        //         $(document).ready(function(){
+
+        // $.scrollify({
+        //    section : "section",
+        //    sectionName : "section-name",
+        //    interstitialSection : "",
+        //    easing: "easeOutExpo",
+        //    scrollSpeed: 1200,
+        //    offset :50,
+        //    scrollbars: false,
+        //    standardScrollElements: ".normal-scroll",
+        //    setHeights: false,
+        //    overflowScroll: true,
+        //    before:function() { scrollspy($.scrollify.current().attr('data-section-name'))},
+        //    after:function(i) {
+        //  $.scrollify.update();    
+        //  $('.navbar').animate({'opacity':1},500);
+        //    const $body = $('body');
+        //    let preIndex = parseInt($body.attr('data-pre-index'));
+        //    let direction = i > preIndex ? 'down' : 'up';
+
+        //    $body
+        //        .attr('data-pre-index', i)
+        //        .removeClass('up down')
+        //        .addClass(direction);              
+        // },
+        //    afterResize:function() {},
+        //    afterRender:function() {
+        //  $('body').attr('data-pre-index', 0);
+        // }
+        // });
+
+
+        // function scrollspy(sectionName){
+
+        // var morphing1 = anime({
+        // targets: '.polymorph',
+        // points: [
+
+        // { value: '0,0 0,0 0,0 0,200' },
+        // { value: '0,0 100,0 50,200 0,200' },
+        // { value: '0,0 100,0 100,200 0,200' },
+        // { value: '100,0 100,0 100,200 50,200' },
+        // { value: '100,0 100,0 100,200 100,200' }
+
+        // ],
+        // easing: 'easeOutQuad',
+        // duration: 1600,
+        // loop: false
+        // });
+
+        // $('.navbar').animate({'opacity':0},500);
+        //    $('.navbar-nav li').removeClass('active');
+        //    $('.navbar-nav li').has('a[href="#'+sectionName+'"]').addClass('active');
+        // }	
+
+        // $('.navbar-nav li a, .link').on('click', function(e){	
+        //    $('.navbar-nav a').blur();
+        // if($(window).width()<768){
+
+        // $('#main-menu').collapse('toggle');
+
+        //   }
+        //    e.preventDefault()
+        //    $('.navbar-nav li').removeClass('active');
+        //    $(this).parents('li').addClass('active');
+        //    var link = $(this).attr('href');
+        //    $.scrollify.move(link);
+        // });	
+
+
+        // $('.btn-next').on('click', function(e){	
+        //    $.scrollify.next();
+        // });
+        // var home_slides = $('#home-slides');
+        // home_slides.owlCarousel({
+        //    loop:true,
+        //    items:1,
+        //    animateOut:'fadeOut',
+        //    autoplay:5000,
+        // nav:false,
+        // dots:false,
+
+        // });
+        //    // add animate.css class(es) to the elements to be animated
+        //  function setAnimation ( _elem, _InOut ) {
+        //    // Store all animationend event name in a string.
+        //    // cf animate.css documentation
+        //    var animationEndEvent = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+        //    _elem.each ( function () {
+        //      var $elem = $(this);
+        //      var $animationType = 'animated ' + $elem.data( _InOut );
+
+        //      $elem.addClass($animationType).one(animationEndEvent, function () {
+        //        $elem.removeClass($animationType); // remove animate.css Class at the end of the animations
+        //      });
+        //    });
+        //  }
+
+        // // Fired before current slide change
+        //  home_slides.on('change.owl.carousel', function(event) {
+        //      var $currentItem = $('.owl-item', home_slides).eq(event.item.index);
+        //      var $elemsToanim = $currentItem.find("[data-out]");
+        //      setAnimation ($elemsToanim, 'out');
+        //  });
+
+        // // Fired after current slide has been changed
+        //  home_slides.on('changed.owl.carousel', function(event) {
+
+        //      var $currentItem = $('.owl-item', home_slides).eq(event.item.index);
+        //      var $elemsToanim = $currentItem.find("[data-in]");$elemsToanim.css({'opacity':'1','visibility':'visible'})
+        //      setAnimation ($elemsToanim, 'in');
+        //  })
+
+        // // Fired after current slide has been changed
+        //  home_slides.on('changed.owl.carousel', function(event) {
+
+        //      var $currentItem = $('.owl-item', home_slides).eq(event.item.index);
+        //      var $elemsToanim = $currentItem.find("[data-in]");
+        //      setAnimation ($elemsToanim, 'in');
+        //  })
+
+
+        // window.sr = ScrollReveal();
+
+        // sr.reveal('.reveal', {origin:'bottom', delay:1500,duration:1000, distance: '100px',opacity:0, reset: true });
+
+        // var morphing1 = anime({
+        // targets: '.polymorph',
+        // points: [
+
+        // { value: '0,0 0,0 0,0 0,200' },
+        // { value: '0,0 100,0 50,200 0,200' },
+        // { value: '0,0 100,0 100,200 0,200' },
+        // { value: '100,0 100,0 100,200 50,200' },
+        // { value: '100,0 100,0 100,200 100,200' }
+
+        // ],
+        // easing: 'easeOutQuad',
+        // duration: 1600,
+        // loop: false
+        // });
+
+        // });
+
+
+
+
+        // $(window).load(function() {
+        // if($(window).width()<768){
+        //    $('p > br').css({'display': 'none'})
+        // }
+        // if($(window).width()>768){
+        //    $('p > br').css({'display': 'block'})
+        // }
+        // $.scrollify.update();
+        // });
+
+        // $(window).resize(function() {
+        // if($(window).width()<768){
+        //    $('p > br').css({'display': 'none'})
+        // }
+        // if($(window).width()>768){
+        //    $('p > br').css({'display': 'block'})
+        // }
+        // });
+
+        // ===== NAVBAR ===== //
+
+
+
+        // ===== HAMBURGER BUTTON ===== //
+        $(document).ready(function () {
+
+            $('.nav-button').click(function () {
+                $('.nav-button').toggleClass('change');
+            })
+
+        });
+
+        $(".htmlCSS").animate({ width: "95%" }, 2100);
+        $(".jsjqaj").animate({ width: "74%" }, 2100);
+        $(".rwd").animate({ width: "86%" }, 2100);
+        $(".seo").animate({ width: "65%" }, 2100);
+        $(".cssF").animate({ width: "44%" }, 2100);
+        $(".wpVC").animate({ width: "60%" }, 2100);
+        $(".bdt").animate({ width: "85%" }, 2100);
+        $(".bAT").animate({ width: "38%" }, 2100);
+        $(".phpMSQL").animate({ width: "40%" }, 2100)
+        $(".typo").animate({ width: "95%" }, 2100);
+        $(".acs").animate({ width: "65%" }, 2100);
+        $(".ld").animate({ width: "80%" }, 2100);
+
+
+
+
     </script>
     <script src="js/splitting.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
