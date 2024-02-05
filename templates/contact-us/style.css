@@ -177,16 +177,6 @@ body {
     margin: 0 auto;
     text-align: center;
 }
-.contact-footer {
-    padding: 2rem 0;
-    background: #000;
-}
-.contact-footer h3 {
-    font-size: 1.3rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    text-align: center;
-}
 .social-links {
     display: flex;
     justify-content: center;
@@ -249,5 +239,225 @@ body {
     }
     .paraa {
         font-size: 12px;
+    }
+}
+
+@media (max-width: 549px) {
+    #asmita-text-footer > * {
+        font-size: 11vw;
+    }
+}
+
+.footer {
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.footer__div {
+    font-size: 70px;
+    letter-spacing: 15px;
+    color: var(--pr-color);
+    text-transform: uppercase;
+}
+
+.footer__div span {
+    display: inline-block;
+}
+
+.footer-row-flex > .row > * {
+    flex: 1 1 0px;
+}
+.footer-row-flex > .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.footer__div > span {
+    color: white;
+    font-weight: 800;
+}
+
+@media screen and (min-width: 1493px) {
+    .section-title {
+        font-size: 5vw;
+    }
+    .sponsor-footer-images {
+        position: relative;
+        bottom: 40px !important;
+    }
+}
+
+@media screen and (max-width: 1031px) {
+    .footer-row-flex > .row :nth-child(1) {
+        flex-basis: 45%;
+    }
+    .footer-row-flex > .row :nth-child(2) {
+        order: 2;
+    }
+    .footer-row-flex > .row :nth-child(3) {
+        order: 3;
+    }
+    .footer-row-flex > .row :nth-child(4) {
+        order: 4;
+    }
+    .footer-row-flex > .row :nth-child(5) {
+        order: 1;
+        flex-basis: 45%;
+    }
+    .footer-images > img {
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 993px) {
+    .section-employee .location__text {
+        padding-left: 100px;
+    }
+    .section-employee .location__text__date {
+        padding-right: 80px;
+    }
+
+    .footer-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #helllo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #asmita-text-footer > * {
+        font-size: 5vw;
+    }
+    #helllo,
+    .footer-images,
+    #asmita-text-footer {
+        position: relative;
+        bottom: 50px;
+    }
+    .team-arrow-image {
+        width: 150px;
+    }
+}
+
+.footer-title-and-text {
+    /* position: relative;
+    bottom: 80px; */
+    text-align: center;
+}
+@media screen and (max-width: 879px) {
+    #helllo,
+    .footer-images,
+    #asmita-text-footer {
+        position: relative;
+        bottom: 0px;
+    }
+    #asmita-text-footer > * {
+        font-size: 6vw;
+    }
+    .footer-title-main {
+        padding-top: 30px !important;
+    }
+    .footer-title-and-text {
+        bottom: 10px !important;
+    }
+}
+
+@media screen and (max-width: 723px) {
+    .sponsor-footer-hr {
+        display: none !important;
+    }
+    .sponsor-footer-section {
+        border-top: 1px solid rgba(118, 118, 118, 0.337);
+        padding-top: 30px;
+        margin-top: 40px;
+    }
+    .footer-title-main {
+        padding-top: 30px !important;
+    }
+    #asmita-text-footer {
+        font-size: 5vw;
+    }
+    #helllo,
+    .footer-images,
+    #asmita-text-footer {
+        position: relative;
+        bottom: 30px;
+    }
+
+    .img-team-png > img {
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .section-location {
+        bottom: 180px !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section-location .paraa {
+        width: 100%;
+        position: relative;
+        right: 50px;
+    }
+    .section-sponsor {
+        bottom: 35px !important;
+    }
+    .footer-title-and-text {
+        bottom: -42px;
+    }
+    .sponsor-footer-images {
+        position: relative;
+        top: 20px;
+    }
+    #map {
+        height: 400px !important;
+        width: 85%;
+        right: 33px;
+    }
+    .navbar-flex-row {
+        justify-content: space-between;
+    }
+    .navbar-brand {
+        order: 2;
+    }
+}
+
+@media screen and (max-width: 573px) {
+    #asmita-text-footer {
+        font-size: 4vw;
+    }
+    .map-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 !important;
+        position: relative;
+        right: 23px;
+    }
+    #map {
+        height: 300px !important;
+        width: 450px !important;
+    }
+    .sponsor-footer-title {
+        font-size: 22px !important;
+    }
+    .sponsor-footer-paraa {
+        font-size: 17px !important;
+    }
+    .footer-contact .paraa {
+        font-size: 15px !important;
+    }
+    .footer-images img {
+        flex-basis: 80% !important;
     }
 }

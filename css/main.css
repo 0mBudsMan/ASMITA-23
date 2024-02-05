@@ -101,13 +101,6 @@ ul {
     margin-left: 2rem;
 }
 
-.footer {
-    background-color: #24262b;
-    padding: 60px 0;
-}
-
-
-
 .footer-col h4 {
     font-size: 18px;
     color: #ffffff;
@@ -658,8 +651,6 @@ a {
     /* top: -10%; */
 }
 
-
-
 .title-2 {
     position: absolute;
     top: 50%;
@@ -823,8 +814,8 @@ button {
     width: 100%;
     top: 0;
 }
-.undrline ::before{
-	transform: skew(-12deg) translateX(-50%);
-  background: rgba(238,111,87,0.5);
-  z-index: -1;
- }
+.undrline ::before {
+    transform: skew(-12deg) translateX(-50%);
+    background: rgba(238, 111, 87, 0.5);
+    z-index: -1;
+}
